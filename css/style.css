@@ -1,0 +1,141 @@
+:root {
+    --background-main: #0d192b;
+    --background-card: #14253d;
+    --white: #ffffff;
+    --text: #8bacda;
+    --primary: #00fff7;
+    --line: #2f415b;
+}
+*{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+   
+    box-sizing: border-box;
+    font-family: Outfit, sans-serif;
+    background-color: var(--background-main);
+    font-weight: 300; 
+}
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    
+    background-color: var(--background-card);
+    border-radius: 10px;
+   
+}
+.card__photos {
+    width: 260px;
+    height: 260px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.card__img {
+   width: 100%;
+   cursor: pointer;
+}
+.card__view {
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 255, 247, 0.6);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.card__view-img {
+    width: 50px;
+    height: 50px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.card__view:hover  {
+   opacity: 1;
+   cursor: pointer;
+
+}
+.card__item {
+    margin: 0 20px 20px;
+}
+.card__heading {
+    margin: 0;
+}
+.card__heading a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.card__heading a:hover {
+    color: var(--primary);
+   
+}
+.card__desc {
+    margin: 20px 0 0 0;
+    font-size: 1.6rem;
+    color: var(--text);
+}
+.card__info {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--line);
+
+}
+
+.card__info-price {
+    color: var(--primary);
+  
+    display: flex;
+    align-items: center;
+}
+.card__info-date {
+    color: var(--text);
+    display: flex;
+    align-items: center;
+}
+.card__info-icon {
+    width: 16px;
+    height: 18px;
+    margin-right: 5px;
+ }
+.cart__auth {
+    margin-top: 15px;
+    display: flex;
+  
+
+}
+.card__auth-img {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.card__auth-name {
+    font-size: 1.6rem;
+    color: var(--text);
+    line-height: 30px;
+    margin-left: 15px;
+}
+.card__auth-name  a {
+    text-decoration: none;
+    color: var(--white);
+}
+.card__auth-name  a:hover {
+    color: var(--primary);
+}
